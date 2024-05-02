@@ -1,0 +1,25 @@
+# i3status configurations
+general {
+    output_format = "i3bar"
+    interval = 5
+}
+
+order += "volume master"
+order += "disk /"
+order += "tztime local"
+
+volume master {
+    format = "Volume %volume "
+    format_muted = "Volume %volume "
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
+
+disk "/" {
+    format = " Disk: %avail "
+}
+
+tztime local {
+    format = " %A %d %H:%M"
+}
