@@ -32,7 +32,7 @@ set $ws4 " 4:Others "
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
-bindsym $mod+4 workspace $ws4
+bindsym $mod+0 workspace $ws4
 
 # Focus windows
 bindsym $mod+h focus left
@@ -50,7 +50,7 @@ bindsym $mod+Shift+l move right
 bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2
 bindsym $mod+Shift+3 move container to workspace $ws3
-bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+0 move container to workspace $ws4
 
 # Assigning workspaces
 assign [class="firefox"] $ws1
