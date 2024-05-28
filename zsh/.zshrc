@@ -4,6 +4,8 @@ export EDITOR="vim"
 # Aliases
 alias vim='nvim'
 alias vi="nvim"
+alias pbcopy='xsel --input --clipboard'
+alias pbpaste='xsel --output --clipboard'
 alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -la'
