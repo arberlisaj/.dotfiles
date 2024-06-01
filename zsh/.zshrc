@@ -2,15 +2,18 @@
 export EDITOR="vim"
 
 # Aliases
-alias vim='nvim'
-alias vi="nvim"
-alias pbcopy='xsel --input --clipboard'
-alias pbpaste='xsel --output --clipboard'
 alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -la'
 alias ..='cd ..'
-alias ...='cd ../..'
+alias vi="nvim"
+alias vim='nvim'
+alias python="python3"
+alias i3c="~/.config/i3/"
+alias i3s="~/.config/i3status/"
+alias vimc="~/.config/nvim/"
+alias pbcopy='xsel --input --clipboard'
+alias pbpaste='xsel --output --clipboard'
 
 # Theme
 ZSH_THEME="robbyrussell"
