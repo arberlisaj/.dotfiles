@@ -59,7 +59,7 @@ assign [class="Gnome-terminal"] $ws2
 assign [class="Code"] $ws3
 assign [class="obs"] $ws4
 assign [class="Gimp"] $ws4
-assign [class="Gnome-boxes"] $ws4
+assign [class="kdenlive"] $ws4
 
 # Key-bindings
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -85,7 +85,6 @@ bindsym $mod+q kill
 exec_always feh --bg-scale /home/lisajarber/.config/wallpaper.png
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id picom -b --config ~/.config/picom.conf
-exec --no-startup-id compton --config ~/.config/compton.conf
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id nm-applet
 
@@ -95,13 +94,13 @@ for_window [class="^.*"] border pixel 0
 for_window [class="^.*"] client.focused  #77dd77 #285577 #ffffff #2e9ef4   #285577
 
 mode "resize" {
-        bindsym Shift+Left resize shrink width 10 px or 10 ppt
-        bindsym Shift+Right resize grow width 10 px or 10 ppt
-        bindsym Shift+Up resize grow height 10 px or 10 ppt
-        bindsym Shift+Down resize shrink height 10 px or 10 ppt
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
+  bindsym Shift+Left resize shrink width 10 px or 10 ppt
+    bindsym Shift+Right resize grow width 10 px or 10 ppt
+    bindsym Shift+Up resize grow height 10 px or 10 ppt
+    bindsym Shift+Down resize shrink height 10 px or 10 ppt
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym $mod+r mode "default"
 }
 
 # Window colors         border              background         text                 indicator
@@ -112,13 +111,13 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 # Status bar 
 bar {
-    status_command i3status
-	colors {
+  status_command i3status
+    colors {
         background $bg-color
-	    separator #757575
-		#                  border             background         text
-		focused_workspace  $bg-color          $bg-color          $text-color
-		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
-	}
+        separator #757575
+#                          border             background         text
+        focused_workspace  $bg-color          $bg-color          $text-color
+        inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+        urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+    }
 }
