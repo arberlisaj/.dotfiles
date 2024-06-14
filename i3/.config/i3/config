@@ -1,5 +1,7 @@
 # Mod key
 set $mod Mod1
+
+# Mod key as floating modifier
 floating_modifier $mod
 
 # Font
@@ -54,12 +56,15 @@ bindsym $mod+Shift+0 move container to workspace $ws4
 
 # Assigning workspaces
 assign [class="firefox"] $ws1
-assign [class="Brave"] $ws1
+assign [class="Google-chrome"] $ws1
 assign [class="Gnome-terminal"] $ws2
+assign [class="jetbrains-idea-ce"] $ws3
 assign [class="Code"] $ws3
 assign [class="obs"] $ws4
 assign [class="Gimp"] $ws4
+assign [class="Blender"] $ws4
 assign [class="kdenlive"] $ws4
+assign [class="gnome-software"] $ws4
 
 # Key-bindings
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -73,7 +78,6 @@ bindsym $mod+p exec rofi -show drun -font "Roboto 18"
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+s exec flameshot gui
 bindsym $mod+space floating toggle
-bindsym $mod+b exec firefox
 bindsym $mod+Shift+r restart
 bindsym $mod+a focus parent
 bindsym $mod+d focus child
