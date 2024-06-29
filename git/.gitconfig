@@ -1,0 +1,13 @@
+[user]
+  name = arberlisaj
+  email = arberlisaj1@gmail.com
+[core]
+  autocrlf = input
+  editor = nvim 
+[color]
+  ui = auto
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
