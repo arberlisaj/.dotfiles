@@ -15,6 +15,10 @@ alias vimc="~/.config/nvim/"
 alias pbcopy='xsel --input --clipboard'
 alias pbpaste='xsel --output --clipboard'
 
+function f() {
+    tmux new-session -A -s lisajarber "$@"
+}
+
 # Theme
 ZSH_THEME="robbyrussell"
 
@@ -31,3 +35,4 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
