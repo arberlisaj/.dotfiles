@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/bash
 
 # Check if script is run as root
 if [ "$EUID" -ne 0 ]; then
@@ -10,38 +10,38 @@ fi
 dnf update -y
 
 # Install desired packages
-dnf install -y \
-  gcc \
-  make \
-  git \
-  wget \
-  curl \
-  neovim \
-  tmux \
-  nodejs \
-  vim \
-  i3 \
-  picom \
-  lxappearance\
-  rofi\
-  feh\
-  thunar\
-  zsh\
-  unrar\
-  vlc\
-  gparted\
-  flameshot\
+dnf install -y\
+  arc-theme\
   brightnessctl\
-  htop \
-  net-tools \
-  tree \
-  jq \
-  unzip \
-  gzip \
-  tar \
-  python3 \
-  python3-pip \
-  python3-devel \
+  clang-tools-extra\
+  curl\
+  feh\
+  flameshot\
+  gcc\
+  gimp\
+  git\
+  gparted\
+  htop\
+  i3\
+  jq\
+  lxappearance\
+  make\
+  neovim\
+  pcmanfm\
+  picom\
+  python3\
+  rofi\
+  snapd\
+  stow\
+  tmux\
+  vim\
+  vlc\
+  wget\
+  xsel\
+  zsh\
+
+# install development tools 
+dnf -y groupinstall "Development Tools"
 
 # Output a message indicating the installation is complete
 echo "Installation complete."
