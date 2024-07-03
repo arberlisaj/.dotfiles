@@ -64,7 +64,7 @@ assign [class="obs"] $ws4
 assign [class="Gimp"] $ws4
 assign [class="Blender"] $ws4
 assign [class="kdenlive"] $ws4
-assign [class="gnome-software"] $ws4
+assign [class="Inkscape"] $ws4
 
 # Key-bindings
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
