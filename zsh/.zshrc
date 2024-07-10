@@ -1,22 +1,30 @@
-# Default Editor
-export EDITOR="vim"
+# Default editor
+export EDITOR='vim'
 
 # Aliases
-alias ls='ls --color=auto'
-alias ll='ls -l'
-alias la='ls -la'
-alias ..='cd ..'
-alias vi="nvim"
+alias vi='nvim'
 alias vim='nvim'
-alias python="python3"
-alias i3c="~/.config/i3/"
-alias i3s="~/.config/i3status/"
-alias vimc="~/.config/nvim/"
-alias pbcopy='xsel --input --clipboard'
-alias pbpaste='xsel --output --clipboard'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias python='python3'
+alias dotc='~/.dotfiles'
+alias i3c='~/.config/i3/'
+alias i3s='~/.config/i3status/'
+alias vimc='~/.config/nvim/'
+alias zshc='vim ~/.zshrc'
+alias so='source ~/.zshrc'
+alias find='find . | grep'
+alias mounted='df -hT'
+alias trash='~/.local/share/Trash'
+alias tree='tree -CAhF --dirsfirst'
+alias copy='xsel --input --clipboard'
+alias date='date "+%d-%m-%Y %A %T %Z"'
+alias cpus='lscpu | grep "Model name\|Architecture\|CPU(s)\|Thread(s) per core"'
 
+# Tmux helper
 function f() {
-    tmux new-session -A -s lisajarber "$@"
+  tmux new-session -A -s lisajarber "$@"
 }
 
 # Theme
@@ -28,11 +36,11 @@ plugins=(git nvm python)
 # Disable marking untracke files 
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# Source
+# Exports
 export ZSH=~"/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 export PATH="$PATH:/opt/nvim-linux64/bin"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
