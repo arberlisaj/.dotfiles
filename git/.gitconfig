@@ -11,3 +11,10 @@
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
   required = true
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = "code --wait --diff  "
+[alias]
+	lg = log --pretty=format:'%an commited %h'
+	unstage = "restore --staged ."
