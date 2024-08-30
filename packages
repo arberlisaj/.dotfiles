@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash 
 
 # Check if script is run as root
 if [ "$EUID" -ne 0 ]; then
@@ -15,12 +15,11 @@ dnf install -y\
   brightnessctl\
   clang-tools-extra\
   curl\
+  fastfetch\
   feh\
   flameshot\
   gcc\
-  gimp\
   git\
-  gparted\
   htop\
   i3\
   jq\
@@ -28,10 +27,8 @@ dnf install -y\
   make\
   neovim\
   pcmanfm\
-  picom\
   python3\
   rofi\
-  snapd\
   stow\
   tmux\
   vim\
