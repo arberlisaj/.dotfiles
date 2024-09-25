@@ -31,16 +31,16 @@ set $ws3 " 3:Editor "
 set $ws4 " 4:Others "
 
 # Switch to workspace
-bindsym $mod+1 workspace $ws1
-bindsym $mod+2 workspace $ws2
-bindsym $mod+3 workspace $ws3
-bindsym $mod+0 workspace $ws4
+bindsym $mod+j workspace $ws1
+bindsym $mod+k workspace $ws2
+bindsym $mod+l workspace $ws3
+bindsym $mod+semicolon workspace $ws4
 
 # Focus windows
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
+bindsym $mod+Control+h focus left
+bindsym $mod+Control+j focus down
+bindsym $mod+Control+k focus up
+bindsym $mod+Control+l focus right
 
 # Move focused window
 bindsym $mod+Shift+h move left
