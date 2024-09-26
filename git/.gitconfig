@@ -1,6 +1,6 @@
 [user]
   name = arberlisaj
-  email = arberlisaj1@gmail.com
+	email = the.arberlisaj@gmail.com
 [core]
   autocrlf = input
   editor = nvim 
