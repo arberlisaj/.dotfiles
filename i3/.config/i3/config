@@ -59,9 +59,11 @@ assign [class="firefox"] $ws1
 assign [class="Brave-browser"] $ws1
 assign [class="Gnome-terminal"] $ws2
 assign [class="Code"] $ws3
+assign [class="jetbrains-idea-ce"] $ws3
 assign [class="obs"] $ws4
 assign [class="Gimp"] $ws4
 assign [class="kdenlive"] $ws4
+assign [class="Rhythmbox"] $ws4
 
 # Key-bindings
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -81,6 +83,10 @@ bindsym $mod+d focus child
 bindsym $mod+r mode "resize"
 bindsym $mod+Shift+c reload
 bindsym $mod+q kill
+
+# Brightness keys 
+bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
+bindsym XF86MonBrightnessUp exec brightnessctl set +10%
 
 # Startup
 exec --no-startup-id picom
