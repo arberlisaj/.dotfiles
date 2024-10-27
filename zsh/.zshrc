@@ -1,5 +1,5 @@
 # Default editor
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # Aliases
 alias vi='nvim'
