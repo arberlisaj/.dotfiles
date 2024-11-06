@@ -81,6 +81,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+a focus parent
 bindsym $mod+d focus child
 bindsym $mod+r mode "resize"
+bindsym $mod+Tab focus right
 bindsym $mod+Shift+c reload
 bindsym $mod+q kill
 
@@ -127,4 +128,3 @@ bar {
         urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
     }
 }
-
