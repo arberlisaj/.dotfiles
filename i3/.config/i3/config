@@ -27,14 +27,16 @@ bindsym $mod+f fullscreen toggle
 # Workspaces
 set $ws1 " 1:Browser "
 set $ws2 " 2:Terminal "
-set $ws3 " 3:Editor"
-set $ws4 " 4:Visual "
+set $ws3 " 3:Workspace "
+set $ws4 " 4:Interact "
+set $ws5 " 5:Visual "
 
 # Switch workspaces 
 bindsym $mod+j workspace $ws1
 bindsym $mod+k workspace $ws2
 bindsym $mod+l workspace $ws3
 bindsym $mod+semicolon workspace $ws4
+bindsym $mod+m workspace $ws5
 
 # Focus windows
 bindsym $mod+Control+h focus left
@@ -53,17 +55,22 @@ bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2
 bindsym $mod+Shift+3 move container to workspace $ws3
 bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+0 move container to workspace $ws5
 
 # Assign workspaces
 assign [class="firefox"] $ws1
 assign [class="Brave-browser"] $ws1
 assign [class="Gnome-terminal"] $ws2
 assign [class="Code"] $ws3
+assign [class="GitKraken"] $ws3
 assign [class="jetbrains-idea-ce"] $ws3
 assign [class="Postman"] $ws3
-assign [class="obs"] $ws4
-assign [class="Gimp"] $ws4
-assign [class="kdenlive"] $ws4
+assign [class="discord"] $ws4
+assign [class="whatsapp-linux-app"] $ws4
+assign [class="Slack"] $ws4
+assign [class="obs"] $ws5
+assign [class="Gimp"] $ws5
+assign [class="kdenlive"] $ws5
 
 # Volume
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
