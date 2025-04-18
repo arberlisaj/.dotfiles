@@ -36,6 +36,8 @@ dnf install -y\
   wget\
   xsel\
   zsh\
+  luarocks\
+  lua5.1\
 
 # install development tools 
 dnf5 install -y @development-tools
