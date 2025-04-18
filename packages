@@ -38,7 +38,5 @@ dnf install -y\
   zsh\
 
 # install development tools 
-dnf -y groupinstall "Development Tools"
+dnf5 install -y @development-tools
 
-# Output a message indicating the installation is complete
-echo "Installation complete."
