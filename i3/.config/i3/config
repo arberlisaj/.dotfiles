@@ -59,6 +59,7 @@ assign [class="firefox"] $ws1
 assign [class="Google-chrome"] $ws1
 assign [class="Gnome-terminal"] $ws2
 assign [class="Code"] $ws3
+assign [class="Postman"] $ws3
 assign [class="jetbrains-idea-ce"] $ws3
 assign [class="obs"] $ws4
 assign [class="Gimp"] $ws4
