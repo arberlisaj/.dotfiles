@@ -17,7 +17,8 @@ dnf install -y\
   curl\
   fastfetch\
   feh\
-  flameshot\
+  ksnip\
+  picom\
   gcc\
   git\
   htop\

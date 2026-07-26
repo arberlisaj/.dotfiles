@@ -77,7 +77,7 @@ bindsym $mod+Shift+period exec /home/lisajarber/.config/i3/scripts/exit.sh
 bindsym $mod+Shift+comma exec i3lock --color "$bg-color"
 bindsym $mod+p exec rofi -show drun -font "Roboto 18"
 bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Shift+s exec flameshot gui
+bindsym $mod+Shift+s exec ksnip -r
 bindsym $mod+space floating toggle
 bindsym $mod+Shift+r restart
 bindsym $mod+a focus parent
