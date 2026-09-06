@@ -39,8 +39,16 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Exports
 export ZSH=~"/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
-export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$HOME/.local/bin:$HOME/bin:$PATH:/opt/nvim-linux64/bin"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+
+# pnpm
+export PNPM_HOME="/home/lisajarber/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
